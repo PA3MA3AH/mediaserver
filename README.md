@@ -73,7 +73,7 @@ sudo journalctl -u mediaserver -f
 ## Протокол
 
 Подробное описание — в `src/protocol.rs`.
-Клиентская часть (Android/Kotlin) — в директории `android/`.
+Клиентская часть (Android/Kotlin) — в репозитории [mediaserver-android](https://github.com/PA3MA3AH/mediaserver-android).
 
 ## Отладка
 

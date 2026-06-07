@@ -1,0 +1,28 @@
+# Конфиг mediaserver
+
+[server]
+bind_address = "0.0.0.0"
+port = 9876
+
+[storage]
+media_root = "/data/PV"
+temp_dir = "/data/PVT"
+
+[ffmpeg]
+ffmpeg_path = "/usr/bin/ffmpeg"
+video_crf = 28
+video_codec = "libx265"
+video_preset = "medium"
+video_max_width = 1920
+photo_quality = 85
+
+[database]
+db_path = "/data/PVDB/.mediaserver.db"
+
+[admin]
+# HTTP-эндпоинт для управления пользователями.
+# localhost-only — доступ только с этого же ПК.
+http_bind = "0.0.0.0:9877"
+# Токен для Bearer-аутентификации админ-запросов.
+# Смени на свой перед первым запуском!
+api_token = "CHANGE_ME_admin_token_2026"

@@ -5,11 +5,11 @@ bind_address = "0.0.0.0"
 port = 9876
 
 [storage]
-media_root = "/data/PV"
-temp_dir = "/data/PVT"
+media_root = "YOUR_PATH"
+temp_dir = "YOUR_PATH"
 
 [ffmpeg]
-ffmpeg_path = "/usr/bin/ffmpeg"
+ffmpeg_path = "YOUR_PATH"
 video_crf = 28
 video_codec = "libx265"
 video_preset = "medium"
@@ -17,7 +17,7 @@ video_max_width = 1920
 photo_quality = 85
 
 [database]
-db_path = "/data/PVDB/.mediaserver.db"
+db_path = "YOUR_PATH/.mediaserver.db"
 
 [admin]
 # HTTP-эндпоинт для управления пользователями.
